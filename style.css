@@ -46,6 +46,7 @@ nav a:hover{
     background-color: #4EC95F;
     color: #FFFFFF;
 }
+
 #banner {
     background-image: url(images/banner.jpg);
     background-position: center;
@@ -240,7 +241,7 @@ article .newsResume {
     flex-direction: row;
     align-items: center;
     text-decoration: none;
-    border-bottom: 1px solid #87E752;
+    border-bottom: 1px solid #4EC95F;
     margin-bottom: 15px;
 }
 .system a:hover {
@@ -259,4 +260,86 @@ article .newsResume {
 .systemName {
     font-size: 15px;
     color: #5C5C5C;
+}
+
+footer {
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+}
+.footerOptions {
+    flex: 1;
+    display: flex;
+}
+.footer1,
+.footer2,
+.footer3 {
+    flex: 1;
+}
+.footer1 {
+    background-color: #9FE89F;
+}
+.footer2 {
+    background-color: #87E752;
+}
+.footer3 {
+    background-color: #4EC95F;
+}
+.footerOptions a {
+    display: block;
+    text-decoration: none;
+    color: #5C5C5C;
+    padding: 20px;
+}
+.footerTitle {
+    font-size: 23px;
+}
+.footerDescription {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.footerArea {
+    display: flex;
+
+}
+footer .widget {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+footer .widgetTitleText {
+    color: #FFFFFF;
+}
+footer .widgetBody {
+    color: #5c5c5c;
+}
+.footerAreaText {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+footer table {
+    width: 100%;
+    font-size: 14px;
+}
+footer table tr {
+    display: flex;
+}
+footer table th {
+    flex: 1;
+    text-align: left;
+}
+footer table td {
+    flex: 1;
+}
+
+.footerCopy {
+    border-top: 1px solid #5C5C5C;
+    height: 40px;
+    line-height: 40px;
+    color: #5C5C5C;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 20px;
 }
