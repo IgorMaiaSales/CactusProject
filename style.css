@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+header {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    display: block;
+    width: 150px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #4EC95F;
+}
+nav .active a,
+nav a:hover{
+    background-color: #4EC95F;
+    color: #FFFFFF;
+}
+#banner {
+    background-image: url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+    display: flex;
+    justify-content: center;
+}
+.column {
+    flex-direction: column;
+}
+.bannerHeadline {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bannerHeadline h1 {
+    color: #FFFFFF;
+    font-size: 50px;
+    text-shadow: 1px 1px 0px #000000;
+    margin: 0;
+    padding: 0;
+    max-width: 400px;
+}
+.bannerHeadline h2 {
+    color: #FFFFFF;
+    font-size: 19px;
+    text-shadow: 1px 1px 0px #000000;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 20px;
+}
+.bannerOptions {
+    height: 210px;
+    display: flex;
+}
+.banner1,
+.banner2,
+.banner3 {
+    flex: 1;
+    color: #5C5C5C;
+    padding: 20px;
+}
+.banner1 {
+    background-color: #9FE89F;
+}
+.banner2 {
+    background-color: #87E752;
+}
+.banner3 {
+    background-color: #4EC95F;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.bannerTitle {
+    font-size: 23px;
+}
+.bannerDescription {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.bannerOptions a {
+    display: inline-block;
+    border: 1px solid #5C5C5C;
+    padding: 5px;
+    color: #5C5C5C;
+    font-size: 12px;
+    text-decoration: none;
+}
+.bannerSelection {
+    display: flex;
+    justify-content: space-between;
+}
+.banner3 a {
+    border: none;
+    text-decoration: none;
+    color: #5C5C5C;
+    border-bottom: 1px solid #5C5C5C;
+    font-size: 15px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+.bannerOptions a:hover {
+    font-weight: bold;
+}
+
+#geral {
+    display: flex;
+    justify-content: center;
+}
+#geral section {
+    flex: 2;
+}
+#geral aside {
+    flex: 1;
+}
+
+.widgetTitle {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widgetTitleText {
+    color: #000000;
+    font-size: 21px;
+    font-weight: bold;
+}
+.widgetTitleBar {
+    background-color: #4EC95F;
+    width: 50px;
+    height: 3px;
+    margin-top: 10px;
+}
+.widgetBody {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.podcastLogoSide{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.podcastLogo {
+    width: 150px;
+    height: 150px;
+    background-color: #87E752;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+    margin-right: 20px;
+    min-width: 300px;
+}
+article a {
+    text-decoration: none;
+}
+article .newsDate {
+    display: flex;
+    margin-bottom: 30px;
+}
+article .newsPostedAt {
+    background-color: #4EC95F;
+    color: #5C5C5C;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+    margin-right: 2px;;
+}
+article .newsComents {
+    background-color: #87E752;
+    color: #5C5C5C;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px;
+}
+article .newsThumbnail {
+    margin-top: 30px;
+}
+article .newsThumbnail img {
+    width: 100%;
+    height: auto;
+}
+article .newsTitle {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #000000;
+    font-size: 23px;
+}
+article .newsResume {
+    font-size: 14px;
+    color: #5C5C5C;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.system a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: 1px solid #87E752;
+    margin-bottom: 15px;
+}
+.system a:hover {
+    font-weight: bold;
+}
+.systemTitle {
+    margin-bottom: 20px;
+}
+.systemIcon {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.systemIcon img {
+    width: 30px;
+}
+.systemName {
+    font-size: 15px;
+    color: #5C5C5C;
+}
