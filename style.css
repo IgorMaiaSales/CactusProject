@@ -3,15 +3,19 @@ body {
     padding: 0;
     font-family: Arial;
 }
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 1020px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 header {
     display: flex;
     justify-content: center;
     height: 100px;
-}
-.container {
-    display: flex;
-    justify-content: space-between;
-    width: 990px;
 }
 .logo {
     display: flex;
@@ -24,6 +28,15 @@ header {
 .menu {
     display: flex;
     align-items: center;
+}
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+}
+.mmLine {
+    height: 3px;
+    background-color: #4EC95F;
 }
 nav ul,
 nav li {
@@ -82,8 +95,8 @@ nav a:hover{
     margin-top: 20px;
 }
 .bannerOptions {
-    height: 210px;
     display: flex;
+    height: 210px;
 }
 .banner1,
 .banner2,
@@ -171,16 +184,15 @@ nav a:hover{
     padding: 0;
 }
 
-.podcastLogoSide{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin-bottom: 30px;
-}
 .podcastLogo {
-    width: 150px;
-    height: 150px;
-    background-color: #87E752;
+    flex: 1;
+    display: flex;
+    margin: 5px;
+    justify-content: center;
+}
+.podcastLogo img {
+    max-width: 150px;
+    min-width: 100px;
 }
 
 .flex {
@@ -372,4 +384,66 @@ footer li {
     font-size: 10px;
     font-weight: bold;
     margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header{
+        height: auto;
+        padding: 20px;
+    }
+    header .container {
+        flex-direction: row;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+    }
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #banner {
+        height: auto;
+    }
+    .bannerHeadline {
+        padding: 20px;
+    }
+    .bannerHeadline h1 {
+        font-size: 40px;
+    }
+    .bannerHeadline h2 {
+        font-size: 15px;
+    }
+    .bannerOptions {
+        height: auto;
+        flex-direction: column;
+    }
+    .bannerHeadline {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    #geral .container .widget {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .footerOptions {
+        flex-direction: column;
+    }
+    .footerArea {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footerCopy {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 }
