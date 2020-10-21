@@ -1,5 +1,5 @@
 # CactusProject
-Bem vindo ao README do repositório CactusProject!
+Bem-vindo ao README do repositório CactusProject!
 
 Esse projeto foi criado com o intuito de estudar HTML5 e CSS3.
 
